@@ -1,4 +1,4 @@
-package com.yash.demoapi
+package com.yash.demoapi.data
 
 data class Data(
     val avatar: String,

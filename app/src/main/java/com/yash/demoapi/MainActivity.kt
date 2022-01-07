@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.yash.demoapi.adapter.UserAdapter
+import com.yash.demoapi.data.Data
+import com.yash.demoapi.data.DemoData
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

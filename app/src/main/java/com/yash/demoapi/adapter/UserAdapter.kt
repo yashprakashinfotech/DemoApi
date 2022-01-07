@@ -1,4 +1,4 @@
-package com.yash.demoapi
+package com.yash.demoapi.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.yash.demoapi.R
+import com.yash.demoapi.data.Data
 
 class UserAdapter(val context: Context, val users: ArrayList<Data>) : RecyclerView.Adapter<UserAdapter.UserViewHolder>(){
 
