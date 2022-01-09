@@ -2,10 +2,8 @@ package com.yash.demoapi
 
 import com.yash.demoapi.data.DemoData
 import com.yash.demoapi.model.UserPost
-import retrofit2.Call
-import retrofit2.Retrofit
+import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import retrofit2.http.Body
 
 import retrofit2.http.GET
@@ -30,23 +28,3 @@ interface UserInterface{
     ): Call<UserPost>
 }
 
-object UserService{
-
-    val userInstance: UserInterface
-
-    init {
-
-        val retrofit = Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-
-        userInstance = retrofit.create(UserInterface::class.java)
-
-//        val jsonPlaceHolderApi = retrofit.create()
-
-    }
-
-
-
-}
